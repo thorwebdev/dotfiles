@@ -112,6 +112,9 @@ alias gc="git checkout "
 alias gcb="git checkout -b "
 alias gco="git checkout --orphan"
 alias gupdatefork="git fetch upstream && git checkout master && git rebase upstream/master"
+alias xgundo="git reset --soft HEAD~"
+alias xgfetchb="git checkout --track origin/"
+alias xgpullsub="git pull --recurse-submodules"
 
 # yarn aliases
 alias yi="yarn"
@@ -124,3 +127,9 @@ alias ni="npm install"
 alias nid="npm install --save-dev "
 alias ns="npm start"
 alias nd="npm run dev"
+
+# stripe cli aliases
+alias slj="stripe listen --print-json"
+alias slf="stripe listen --forward-to "
+alias sll="stripe listen --load-from-webhooks-api --forward-to localhost:"
+alias st="stripe trigger "
