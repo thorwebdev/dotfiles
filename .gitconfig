@@ -1,0 +1,5 @@
+[user]
+	email = you@gmail.com
+	name = yourname
+[init]
+	defaultBranch = main
