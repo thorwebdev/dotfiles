@@ -133,3 +133,60 @@ alias slj="stripe listen --print-json"
 alias slf="stripe listen --forward-to "
 alias sll="stripe listen --load-from-webhooks-api --forward-to localhost:"
 alias st="stripe trigger "
+
+## NEW TO SORT
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+## go
+export GOPATH="$HOME/go"
+
+## Aliases
+### git
+alias ga="git add -A"
+alias gca="git commit -a -m"
+alias gcm="git commit -a -m"
+alias gc="git checkout"
+alias gpush="git push --set-upstream origin"
+alias xgpush="git push --set-upstream origin"
+alias gcb="git checkout -b"
+alias gcp="git cherry-pick"
+alias gb="git branch"
+alias gl="git log"
+alias xgamend="git commit --amend --no-edit"
+alias xgreset="git reset HEAD~"
+alias xgrevert="git reset HEAD~"
+
+### Python simple web server
+alias ssweb="python3 -m http.server"
+
+# pnpm
+export PNPM_HOME="/Users/thorwebdev/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+
+# Deno
+export PATH="/Users/thorwebdev/.deno/bin:$PATH"
+export DENO_DEPLOY_TOKEN=""
+
+# Python
+alias python="python3"
+alias pip="pip3"
+
+# Kill port 3000
+alias kill3000="lsof -t -i tcp:3000 | xargs kill"
+
+# ngrok
+alias myngrok="ngrok http --domain=TBD.ngrok-free.app"
+
+# Android
+# /Users/thorwebdev/Library/Android/sdk
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
+export ANDROID_HOME=$HOME/Library/Android/sdk 
+export PATH=$PATH:$ANDROID_HOME/emulator 
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+## Ruby rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
